@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+.top-menu {
+  position: relative; 
+  background: rgb(204, 11, 11);
+  box-shadow: inset 0 0 10px rgb(0, 0, 0);
+}
+.top-menu:before,
+.top-menu:after {
+  content: "";
+  display: block;
+  height: 1px;
+  border-top: 3px solid #000000;
+  border-bottom: 1px solid #000000;
+  margin-bottom: 2px;
+}
+.top-menu:after {
+  border-bottom: 3px solid #ff006a;
+  border-top: 1px solid #f36900;
+  box-shadow: 0 2px 7px rgb(0, 0, 0);
+  margin-top: 2px;
+} 
+.menu-main {
+  list-style: none;
+  padding: 0 30px;
+  margin: 0;
+  font-size: 18px;
+  text-align: center;
+  position: relative;
+}
+.menu-main:before,
+.menu-main:after {
+  content: "\25C8";
+  line-height: 1;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.menu-main:before {left: 15px;}
+.menu-main:after {right: 15px;}
+.menu-main li {
+  display: inline-block;
+  padding: 5px 0;
+}
+.menu-main a {
+  text-decoration: none;
+  display: inline-block;
+  margin: 2px 5px;
+  padding: 6px 15px;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+  color: #000000;
+  border-bottom: 1px solid transparent;
+  transition: .3s linear;
+}
+.menu-main .current, .menu-main a:hover {
+  border-radius: 3px;
+  background: #f3ece1;
+  color: #000000;
+  text-shadow: 0 1px 0 #fff;
+  border-color: #c6c6c6;
+}
+@media (max-width: 500px) {
+  .menu-main li {display: block;}
+}
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 135%;
+    text-align: left;
+    color: rgb(252, 252, 252);
+    padding:0% 10% 0% 10%;
+} 
+h1 {
+    font-size: 150%;
+    color: rgb(252, 252, 252);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding:0% 10% 0% 10%;
+}
+h2 {
+  font-size: 150%;
+  color: rgb(252, 252, 252);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  padding:0% 10% 0% 10%;
+}
+#video {
+    text-align: center;
+}
+.fullscreen-bg {
+    overflow: hidden;
+    z-index: -100;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding-top:45%;
+}
+ 
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.overlay {
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+.overlay h1 {
+    text-align:center;
+    color:#fff;
+    font-size: 70px;
+    margin-top:17%;
+}
+
+#привет {
+  color:#ffffff ;
+  font-size: 300%;
+  display: block;
+  background-color: #000000;
+  text-align: center;
+  border-radius: 20px;
+  width: 300px;
+  margin-left: 450px;
+  border: groove 10px rgb(255, 255, 255);
+}
+#button{
+  font-size: 200%;
+  color: rgb(252, 252, 252);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  padding:0% 10% 0% 10%;
+
+}
+body { 
+  background: linear-gradient(to top, #f300aa, #00007a);
+}
+#uu{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 135%;
+    text-align: center;
+    color: rgb(252, 252, 252);
+    padding:0% 10% 0% 10%;
+}
+img {
+  width: 40%;
+  transition: 1s;
+  display: block;
+  margin: 0 auto;
+}
+#приве {
+  color:#ffffff ;
+  font-size: 300%;
+  display: block;
+  background-color: #ffffff;
+  text-align: center;
+  border-radius: 20px;
+  width: 300px;
+  margin-left: 450px;
+  border: groove 10px rgb(255, 255, 255);
+  
+}
+
+.gradient-button {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  padding: 20px 30px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  transition: .5s;
+  text-align: center;
+}
+.gradient-button:hover {
+  background-position: right center;
+}
+
+.center-button {
+  text-align: center;
+}
+#rere {
+  font-size: 200%;
+    color: rgb(252, 252, 252);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding:0% 10% 0% 10%;
+}
+/* Собственно сам слайдер */
+.slider{
+  max-width: 90%;
+  position: relative;
+  margin: auto;
+  height: 300px;
+  margin-bottom: 15px;
+}
+/* Картинка мастабируется по отношению к родительскому элементу */
+.slider .item img {
+  object-fit: cover;
+  width: 100%;
+  height: 300px;
+  border: none !important;
+  box-shadow: none !important;
+}
+/* Кнопки вперед и назад */
+.slider .prev, .slider .next {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+.slider .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* При наведении на кнопки добавляем фон кнопок */
+.slider .prev:hover,
+.slider .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* Заголовок слайда */
+.slideText {
+  position: absolute;
+  color: #fff;
+  font-size: 35px;
+  /* Выравнивание текста по горизонтали и по вертикали*/
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* Тень*/
+  text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+}
+/* Кружочки */
+.slider-dots {
+  text-align: center;
+}
+.slider-dots_item{
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 2px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active,
+.slider-dots_item:hover {
+  background-color: rgb(0, 0, 0);
+}
+/* Анимация слайдов */
+.slider .item {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+      opacity: .4
+  }
+  to {
+      opacity: 1
+  }
+}
+@keyframes fade {
+  from {
+      opacity: .4
+  }
+  to {
+      opacity: 1
+  }
+}
